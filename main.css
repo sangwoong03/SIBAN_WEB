@@ -1,6 +1,27 @@
+/* 22. 01. 17 적용이 안된다... */
+@media (hover: hover) {
+	header .link-group .main-link li a:hover {
+        font-size: 16px;
+        color: #e5e5e5;
+        text-decoration: underline;
+    }
+    header .link-group .main-link li a:hover img {
+        width: 16px;
+        height: 16px;
+    }
+    header .menu-group .main-menu li a:hover {
+        font-size: 26px;
+        color: #e5e5e5;
+        text-decoration: underline;
+    }
+    .section--artist .artist-tiles .tiles a:hover {
+        background: rgba(0, 0, 0, .03);
+        font-size: 22px;
+        color: #252525;
+    }
+}
 
 /* COMMON */
-
 .body_container {   
     font-size: 16px;
     color: #333;
@@ -27,6 +48,21 @@ a {
     clear: both;
 }
 
+/* INNER-BOX */
+.inner--box {
+    max-width: 860px;
+    margin: 0 auto;
+}
+.inner--box .box__title {
+    font-size: 42px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.inner--box .box__title .title__more-info {
+    font-size: 15px;
+    display: flex;
+    flex-direction: row-reverse;
+}
 
 /* SECTION */
 .section {
@@ -78,19 +114,10 @@ header .link-group .main-link li a {
     padding: 10px;
     transition: 0.4s;
 }
-header .link-group .main-link li a:hover {
-    font-size: 16px;
-    color: #e5e5e5;
-    text-decoration: underline;
-}
 header .link-group .main-link li a img {
     width: 14px;
     height: 14px;
     margin-right: 5px;
-}
-header .link-group .main-link li a:hover img {
-    width: 16px;
-    height: 16px;
 }
 header .menu-group {
     padding-top: 50px;
@@ -108,11 +135,6 @@ header .menu-group .main-menu li a {
     cursor: pointer;
     padding: 30px;
     transition: 0.4s;
-}
-header .menu-group .main-menu li a:hover {
-    font-size: 26px;
-    color: #e5e5e5;
-    text-decoration: underline;
 }
 
 
@@ -151,29 +173,10 @@ header .menu-group .main-menu li a:hover {
     text-shadow: 1px 1px 1px rgb(0 0 0 / 75%);
 }
 
+
 /* VISUAL */
 .section--visual {
     padding-top: 150px;
-}
-.section--visual .inner {
-
-}
-.section--visual .summary {
-    max-width: 860px;
-    margin: 0 auto;
-}
-.section--visual .summary .summary__title {
-    font-size: 42px;
-    padding-bottom: 5px;
-    border-bottom: 1px solid #e5e5e5;
-}
-.section--visual .summary .summary__title .title__more-info {
-    font-size: 15px;
-    display: flex;
-    flex-direction: row-reverse;
-}
-.section--visual .summary .summary__description {
-
 }
 .section--visual .youtube-video {
     max-width: 860px;
@@ -196,23 +199,6 @@ header .menu-group .main-menu li a:hover {
 /* ARTIST */
 .section--artist {
     padding-top: 100px;
-}
-.section--artist .inner {
-
-}
-.section--artist .inner .summary {
-    max-width: 860px;
-    margin: 0 auto;
-}
-.section--artist .summary .summary__title {
-    font-size: 42px;
-    padding-bottom: 5px;
-    border-bottom: 1px solid #e5e5e5;
-}
-.section--artist .summary .summary__title .title__more-info {
-    font-size: 15px;
-    display: flex;
-    flex-direction: row-reverse;
 }
 .section--artist .artist-tiles {
     max-width: 1200px;
@@ -251,26 +237,10 @@ header .menu-group .main-menu li a:hover {
     color: #252525;
 }
 
+
 /* ACTIVITY */
 .section--activity {
     padding-top: 100px;
-}
-.section--activity .inner {
-
-}
-.section--activity .summary {
-    max-width: 860px;
-    margin: 0 auto;
-}
-.section--activity .summary .summary__title {
-    font-size: 42px;
-    padding-bottom: 5px;
-    border-bottom: 1px solid #e5e5e5;
-}
-.section--activity .summary .summary__title .title__more-info {
-    font-size: 15px;
-    display: flex;
-    flex-direction: row-reverse;
 }
 .section--activity .activity__wrap {
     max-width: 1200px;
@@ -306,7 +276,7 @@ footer {
     box-sizing: border-box;
 }
 footer.section .inner{
-    max-width: 860px;
+    max-width: 1000px;
     margin:0 auto;
     font-size: 12px;
     border-top: 1px solid #6e6e6e;
@@ -346,7 +316,11 @@ footer .footer--link {
 footer .footer--link a {
     display: flex;
     justify-content: center;
-    padding: 5px 10px;
+    padding: 10px;
+}
+footer .footer--link a:hover {
+    -webkit-filter: opacity(.5) drop-shadow(0 0 0);
+    filter: opacity(.5) drop-shadow(0 0 0 .7); 
 }
 footer .footer--link a:first-child {
     margin-right: 10px;

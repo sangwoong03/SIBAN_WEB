@@ -5,10 +5,38 @@
     <title> 시반컴퍼니 </title>
     
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="sangwoong03">
+    <meta name="description" content="Well begun, is half done, 시반의 평범한 일상에 여려분을 초대합니다">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
     
+    <meta porperty="og:type" content="website">
+    <meta porperty="og:site_name" content="SIBAN">
+    <meta porperty="og:title" content="시작이 반이다">
+    <meta porperty="og:description"
+        content="Well begun, is half done, 시반의 평범한 일상에 여려분을 초대합니다">
+    <meta porperty="og:image" content="img/header_logo.jpg">
+    <meta porperty="og:image:width" content="1200">
+    <meta porperty="og:image:height" content="800">
+    <meta porperty="og:url" content="https://sibancompany.com">
+
+    <meta porperty="twitter:card" content="summary">
+    <meta porperty="twitter:site" content="SIBAN">
+    <meta porperty="twitter:title" content="시작이 반이다">
+    <meta porperty="twitter:description"
+        content="Well begun, is half done, 시반의 평범한 일상에 여려분을 초대합니다">
+    <meta porperty="twitter:image" content="img/header_logo.jpg">
+    <meta porperty="twitter:url" content="https://sibancompany.com">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" media="(max-width: 1024px)" href="./css/medium.css">
+    <link rel="stylesheet" media="(max-width: 768px)" href="./css/small.css">
+    
+    
+    <link rel="icon" href="logo_black_icon.ico">
+    <link rel="apple-touch-icon" href="logo_black_icon.ico">
+    
+    
     <style>
         @font-face {
             font-family: "GowunBatang-Regular";
@@ -20,6 +48,7 @@
             font-family: "GowunBatang-Regular";
         }
     </style>
+    
 </head>
 
 <body>  
@@ -31,7 +60,7 @@
             <div class="inner">
                 
                 <div class="logo">
-                    <a href="#"> <img src="./img/header_logo.jpg" alt="로고"> </a>
+                    <a href="#"> <img src="../img/header_logo.jpg" alt="로고"> </a>
                 </div>
 
                 <div class="menu-nav">
@@ -52,16 +81,16 @@
                     <div class="menu-group">
                         <ul class="main-menu">
                             <li>
-                                <a href="#"> 소개 </a>
+                                <a href="./html/intro.html"> 소개 </a>
                             </li>
                             <li>
-                                <a href="#"> 공연일정 </a>
+                                <a href="./html/schedule.html"> 공연일정 </a>
                             </li>
                             <li>
-                                <a href="#"> 아티스트 </a>
+                                <a href="./html/artists.html"> 아티스트 </a>
                             </li>
                             <li>
-                                <a href="#"> 1:1 문의 </a>
+                                <a href="./html/asks.html"> 1:1 문의 </a>
                             </li>
                         </ul>
                     </div>
@@ -79,8 +108,9 @@
                         시:&nbsp;반
                     </h2>
                     <p class="summary__description">
-                        화려한 일상은 평범한 문을 여는 것에서 시작됩니다. <br/>
-                        우리의 평범한 일상에 여러분을 초대합니다. <br/>
+                        Well begun, is hlaf done  <br/>
+
+                        시반의 평범한 일상에 여러분을 초대합니다.<br/>
                     </p>
                 </div>
                 
@@ -91,14 +121,11 @@
         <section class="section section--visual">
             <div class="inner">
                 
-                <div class="summary">
-                    <h2 class="summary__title">
+                <div class="inner--box">
+                    <h2 class="box__title">
                         시반의 일상을 공유합니다
                         <a href="https://www.youtube.com/channel/UCLXAm23QnEYE_WNyjUK3qyQ" class="title__more-info"> 더 보기</a>
                     </h2>
-                    <p class="summary__description">
-                        <!-- 필요 없는 부분 -->
-                    </p>
                 </div>
 
                 <div class="youtube-video">
@@ -114,14 +141,11 @@
         <section class="section section--artist">
             <div class="inner">
 
-                <div class="summary">
-                    <h2 class="summary__title">
+                <div class="inner--box">
+                    <h2 class="box__title">
                         아 티 스 트
                         <a href="#" class="title__more-info" target="blank"> 더 보기</a>
                     </h2>
-                    <p class="summary__description">
-                        <!-- 필요 없는 부분 -->
-                    </p>
                 </div>
 
                 <div class="artist-tiles">
@@ -151,8 +175,8 @@
         <section class="section section--activity">
             <div class="inner">
 
-                <div class="summary">
-                    <h2 class="summary__title">
+                <div class="inner--box">
+                    <h2 class="box__title">
                         시반의 일상을 만나보세요
                         <a href="#" class="title__more-info" target="blank"> 더 보기</a>
                     </h2>
@@ -161,7 +185,7 @@
                     </p>
                 </div>
                 <div class="activity__wrap">
-                    <div class="act act1">
+                    <!-- <div class="act act1">
                         <img src="" alt="act">
                         <p class="act__description"> 작품 설명란입니다. 폰트를 설정해주세요 최대 몇글자로 설정할까요 설정하는 글자수가 넘을 경우 넘어간 본문은 보이지 않고 ...으로 대체됩니다.</p>
                     </div>
@@ -176,7 +200,10 @@
                     <div class="act act4">
                         <img src="" alt="act">
                         <p class="act__description"> 작품 설명란입니다. 최대 몇글자로 설정할까요 설정하는 글자수가 넘을 경우 넘어간 본문은 보이지 않고 ...으로 대체됩니다.</p>
-                    </div>
+                    </div> -->
+
+
+                    <h2 class="box__title"> 준비 중입니다 </h2>
                 </div>
 
             </div>
@@ -203,7 +230,6 @@
 
                 <div class="footer--main float--left">
                     <img src="./img/footer_logo.jpg" alt="footer_logo">
-                    <p> Copyright SIBAN All rights reserved. </p>
                 </div>
                 
                 <div class="footer--link">
@@ -214,8 +240,8 @@
                         <img src="./img/youtube_gray.png" alt="Youtube">
                     </a>
                 </div>
-
             </div>
+            <p> Copyright SIBAN All&nbsp;rights reserved. </p>
         </footer>
 
     </div>
