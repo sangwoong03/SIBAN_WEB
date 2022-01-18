@@ -34,6 +34,21 @@ a {
     text-decoration: none;
     color: #333;
 }
+.move_to_top {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background: #F5F5DC;
+    border: 2px solid #FFFBCD;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: sans-serif;
+    transition: 0.4s
+}
+.move_to_top:hover {
+    padding: 10px 15px;
+}
 
 /* FLOAT */
 .float--left {
