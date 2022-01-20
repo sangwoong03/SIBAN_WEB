@@ -1,4 +1,4 @@
-/* 22. 01. 17 적용이 안된다... */
+/* 22. 01. 17 hover 해제 적용이 안된다... */
 @media (hover: hover) {
 	header .link-group .main-link li a:hover {
         font-size: 16px;
@@ -38,13 +38,18 @@ a {
     position: fixed;
     bottom: 50px;
     right: 50px;
-    background: #F5F5DC;
-    border: 2px solid #FFFBCD;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid lightgray;
     padding: 5px 10px;
     border-radius: 5px;
     font-weight: bold;
     font-family: sans-serif;
-    transition: 0.4s
+    transition: 0.2s
+}
+.move_to_top img {
+    display: block; 
+    width: 25px;
+    height: 30px;
 }
 .move_to_top:hover {
     padding: 10px 15px;
@@ -189,42 +194,39 @@ header .menu-group .main-menu li a {
 }
 
 
-/* VISUAL */
-.section--visual {
-    padding-top: 150px;
-}
-.section--visual .youtube-video {
-    max-width: 860px;
-    margin: 50px auto;
-}
-.section--visual .youtube-video .video-ratio {
-    height: 0;
-    padding-top: 56.25%;
-    position: relative;
-}
-.section--visual .youtube-video .video-ratio iframe {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top:0;
-    left: 0;
-}
-
-
 /* ARTIST */
 .section--artist {
     padding-top: 100px;
 }
 .section--artist .artist-tiles {
-    max-width: 1200px;
-    display: flex;
-    justify-content: space-around;
+    max-width: 960px; 
+    height: 520px;
     margin: 0 auto;
+    position: relative;
+}
+.section--artist .artist-tiles .tiles-wrapper {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.section--artist .artist-tiles .tiles--slide {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    /* width: 1980px ; */
+    margin: 0 auto;
+    transition: 0.4s ease-out;
 }
 .section--artist .artist-tiles .tiles {
-    width: 350px;
-    padding-top: 30px;
+    width: 300px;
+    margin-top: 30px;
     text-align: center;
+}
+.section--artist .artist-tiles .tiles:not(:last-child) {
+    margin-right: 30px;
 }
 .section--artist .artist-tiles .tiles img {
     display: block;
@@ -251,35 +253,115 @@ header .menu-group .main-menu li a {
     font-size: 22px;
     color: #252525;
 }
+.section--artist .artist-tiles .btn-move {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section--artist .artist-tiles .btn-move:hover {
+    background: rgba(0, 0, 0, .03);
+}
+.section--artist .artist-tiles .btn-move img {
+    display: block;
+    width: 16px;
+    height: 16px;
+    padding: 20px;
+}
+#move--left {
+    position: absolute;
+    top: 50%;
+    right: calc(100% + 30px);
+    cursor: pointer;
+    border-radius: 50%;
+}
+#move--right{
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 30px);
+    cursor: pointer;
+    border-radius: 50%;
+}
 
 
 /* ACTIVITY */
 .section--activity {
-    padding-top: 100px;
+    padding-top: 50px;
+    background: #f6f4f1;
+    color: #333;
+    position: relative;
 }
 .section--activity .activity__wrap {
-    max-width: 1200px;
+    
+}
+.section--activity .activity__wrap .acts-wrapper {
+    max-width: 1600px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin: 0 auto;
 }
 .section--activity .activity__wrap .act {
-    width: 250px;
-
+    width: 350px;
     /* margin 수정 */
     margin-top: 50px;
     margin-bottom: 50px;
-    border-top: 1px solid #e5e5e5;
-    border-bottom: 1px solid #e5e5e5;
-    
+    border: 1px solid #f4f5e4;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, .1);
+    transition: 0.4s;
+}
+.section--activity .activity__wrap .act:not(:last-child) {
+    margin-right: 10px;
+}
+.section--activity .activity__wrap .act .act__breif {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
 }
 .section--activity .activity__wrap .act img {
     display: block;
-    width: 100%;
-    height: 250px;
-    margin-top: 5px;
+    width: 280px;
+    height: 300px;
+    margin: 10px auto;
     /* border 지우기 */
-    border: 1px solid;
+    border: 1px solid #e5e5e5;
+}
+.section--activity .activity__wrap .act__description {
+    display: flex;
+    font-size: 16px;
+    margin-left: 35px;
+    margin-bottom: 10px;
+    line-height: 1.2rem;
+}
+.section--activity .activity__wrap .act__description ul:first-child li {
+    text-align: center;
+    font-weight: bold;
+}
+.section--activity .activity__wrap .act__description ul:last-child li {
+    margin-left: 10px;
+}
+.activity__scroll__wrap {
+}
+
+/* VISUAL */
+.section--visual {
+    padding-top: 150px;
+}
+.section--visual .youtube-video {
+    max-width: 860px;
+    margin: 50px auto;
+}
+.section--visual .youtube-video .video-ratio {
+    height: 0;
+    padding-top: 56.25%;
+    position: relative;
+}
+.section--visual .youtube-video .video-ratio iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
 }
 
 
@@ -287,7 +369,7 @@ header .menu-group .main-menu li a {
 footer {
     background: #000;
     color: #e5e5e5;
-    padding: 20px 0 25px 0;
+    padding: 30px 0;
     box-sizing: border-box;
 }
 footer.section .inner{
@@ -297,13 +379,18 @@ footer.section .inner{
     border-top: 1px solid #6e6e6e;
     position: relative;
 }
-
 footer .footer--company--info {
     display: flex;
-    padding-top: 25px;
+    padding-top: 10px;
 }
 footer .footer--company--info li{
     margin-bottom: 10px;
+}
+footer .footer--company--info li a {
+    color: #fff;
+}
+footer .footer--company--info li a:hover {
+    text-decoration: underline;
 }
 footer .footer--company--info .info--left {
     text-align: end;
@@ -339,5 +426,8 @@ footer .footer--link a:hover {
 }
 footer .footer--link a:first-child {
     margin-right: 10px;
+}
+footer .small--p {
+    display: none;
 }
 
