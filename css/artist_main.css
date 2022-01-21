@@ -1,0 +1,241 @@
+/* 22. 01. 17 hover 해제 적용이 안된다... */
+@media (hover: hover) {
+	header .link-group .main-link li a:hover {
+        font-size: 16px;
+        color: #e5e5e5;
+        text-decoration: underline;
+    }
+    header .link-group .main-link li a:hover img {
+        width: 16px;
+        height: 16px;
+    }
+    header .menu-group .main-menu li a:hover {
+        font-size: 26px;
+        color: #e5e5e5;
+        text-decoration: underline;
+    }
+}
+/* COMMON */
+.body_container {   
+    font-size: 16px;
+    color: #333;
+    background: #e5e5e5;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+.move_to_top {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid lightgray;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: sans-serif;
+    transition: 0.2s
+}
+.move_to_top img {
+    display: block; 
+    width: 25px;
+    height: 30px;
+}
+.move_to_top:hover {
+    padding: 10px 15px;
+}
+
+/* FLOAT */
+.float--left {
+    float: left;
+}
+.float--right {
+    float: right;
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* INNER-BOX */
+.inner--box {
+    max-width: 860px;
+    margin: 0 auto;
+}
+.inner--box .box__title {
+    font-size: 42px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.inner--box .box__title .title__more-info {
+    font-size: 15px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* SECTION */
+.section {
+    position: relative;
+}
+.section .inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+/* HEADER */
+header {
+    border-bottom: 1px solid rgba(0, 0, 0, .75);
+    box-shadow: 0 0 5px rgb(0 0 0 / .75);
+}
+header .inner {
+    height: 200px;
+    display: flex;
+}
+header .logo {
+    width: 200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .logo a img {
+    display: block;
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+}
+header .menu-nav {
+    flex: 1;
+}
+header .link-group .main-link {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 25px;
+}
+header .link-group .main-link li:first-child {
+    order: 1;
+    margin-right: 10px;
+}
+header .link-group .main-link li a {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 10px;
+    transition: 0.4s;
+}
+header .link-group .main-link li a img {
+    width: 14px;
+    height: 14px;
+    margin-right: 5px;
+}
+header .menu-group {
+    padding-top: 50px;
+}
+header .menu-group .main-menu {
+    display: flex;
+    margin-left: 100px;
+}
+header .menu-group .main-menu li {
+    width: 25%;
+}
+header .menu-group .main-menu li a {
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 30px;
+    transition: 0.4s;
+}
+
+/* ARTISTS */
+.artists--section--artist {
+
+}
+.artists--section--artist .inner {
+    /* border: 1px solid; */
+    max-width: 1300px
+}
+.artists--section--artist .artist__title {
+    font-size: 40px;
+    font-weight: bold;
+    padding: 30px 0;
+}
+.artists--section--artist .artists-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3,550px);
+    gap: 100px 0;
+}
+.artists--section--artist .artists-container .artists {
+    box-shadow: 2px 3px 5px 0px;
+    margin: 30px;
+}
+
+/* 중복줄이기 */
+.artists--section--artist .artists-container .artists .artist1 {
+    width: 100%;
+    height: 100%;
+    background: url("../img/artisits/younggwang_main.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.artists--section--artist .artists-container .artists .artist2 {
+    width: 100%;
+    height: 100%;
+    background: url("../img/artisits/suyoung_main.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.artists--section--artist .artists-container .artists .artist3 {
+    width: 100%;
+    height: 100%;
+    background: url("../img/artisits/yunhwa_main.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.artists--section--artist .artists-container .artists .artist4 {
+    width: 100%;
+    height: 100%;
+    background: url("../img/artisits/rakoon_main.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.artists--section--artist .artists-container .artists .artist5 {
+    width: 100%;
+    height: 100%;
+    background: url("../img/artisits/jaehun_main.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.artists--section--artist .artists-container .artists .artist6 {
+    width: 100%;
+    height: 100%;
+    background: url("../img/artisits/manjoong_main.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.artists--section--artist .artists-container .artists .position {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+.artists--section--artist .artists-container .artists .artist--name {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}

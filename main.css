@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 /* 22. 01. 17 hover 해제 적용이 안된다... */
-=======
-/* 22. 01. 17 적용이 안된다... */
->>>>>>> main
 @media (hover: hover) {
 	header .link-group .main-link li a:hover {
         font-size: 16px;
@@ -42,27 +38,18 @@ a {
     position: fixed;
     bottom: 50px;
     right: 50px;
-<<<<<<< HEAD
     background: rgba(255, 255, 255, 1);
     border: 1px solid lightgray;
-=======
-    background: #F5F5DC;
-    border: 2px solid #FFFBCD;
->>>>>>> main
     padding: 5px 10px;
     border-radius: 5px;
     font-weight: bold;
     font-family: sans-serif;
-<<<<<<< HEAD
     transition: 0.2s
 }
 .move_to_top img {
     display: block; 
     width: 25px;
     height: 30px;
-=======
-    transition: 0.4s
->>>>>>> main
 }
 .move_to_top:hover {
     padding: 10px 15px;
@@ -110,6 +97,10 @@ a {
 
 
 /* HEADER */
+header {
+    border-bottom: 1px solid rgba(0, 0, 0, .75);
+    box-shadow: 0 0 5px rgb(0 0 0 / .75);
+}
 header .inner {
     height: 200px;
     display: flex;
@@ -207,34 +198,19 @@ header .menu-group .main-menu li a {
 }
 
 
-<<<<<<< HEAD
 /* ARTIST */
 .section--artist {
     padding-top: 100px;
 }
 .section--artist .artist-tiles {
     max-width: 960px; 
-    height: 520px;
+    height: 550px;
     margin: 0 auto;
-=======
-/* VISUAL */
-.section--visual {
-    padding-top: 150px;
-}
-.section--visual .youtube-video {
-    max-width: 860px;
-    margin: 50px auto;
-}
-.section--visual .youtube-video .video-ratio {
-    height: 0;
-    padding-top: 56.25%;
->>>>>>> main
     position: relative;
 }
 .section--artist .artist-tiles .tiles-wrapper {
     width: 100%;
     height: 100%;
-<<<<<<< HEAD
     margin: 0 auto;
     position: relative;
     overflow: hidden;
@@ -243,20 +219,6 @@ header .menu-group .main-menu li a {
     position: absolute;
     left: 0;
     top: 0;
-=======
-    position: absolute;
-    top:0;
-    left: 0;
-}
-
-
-/* ARTIST */
-.section--artist {
-    padding-top: 100px;
-}
-.section--artist .artist-tiles {
-    max-width: 1200px;
->>>>>>> main
     display: flex;
     /* width: 1980px ; */
     margin: 0 auto;
@@ -274,7 +236,7 @@ header .menu-group .main-menu li a {
     display: block;
     box-shadow: 2px 3px 5px 0px;
     width: 100%;
-    height: 350px;
+    height: 375px;
     margin: 0 auto 10px auto;
 }
 .section--artist .artist-tiles .tiles .artist-name {
@@ -295,7 +257,6 @@ header .menu-group .main-menu li a {
     font-size: 22px;
     color: #252525;
 }
-<<<<<<< HEAD
 .section--artist .artist-tiles .btn-move {
     display: flex;
     justify-content: center;
@@ -333,14 +294,6 @@ header .menu-group .main-menu li a {
     color: #333;
     position: relative;
 }
-=======
-
-
-/* ACTIVITY */
-.section--activity {
-    padding-top: 100px;
-}
->>>>>>> main
 .section--activity .activity__wrap {
     
 }
@@ -374,15 +327,21 @@ header .menu-group .main-menu li a {
     width: 280px;
     height: 300px;
     margin: 10px auto;
-    /* border 지우기 */
-    border: 1px solid #e5e5e5;
 }
 .section--activity .activity__wrap .act__description {
     display: flex;
+    justify-content: center;
     font-size: 16px;
-    margin-left: 35px;
     margin-bottom: 10px;
     line-height: 1.2rem;
+}
+.section--activity .activity__wrap .act__description ul:first-child li {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.section--activity .activity__wrap .act__description ul:last-child {
+    /* padding-left: 10px; */
 }
 .section--activity .activity__wrap .act__description ul:first-child li {
     text-align: center;
@@ -481,4 +440,3 @@ footer .footer--link a:first-child {
 footer .small--p {
     display: none;
 }
-
