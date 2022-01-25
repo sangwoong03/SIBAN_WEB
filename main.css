@@ -98,6 +98,7 @@ a {
 
 /* HEADER */
 header {
+    box-sizing: border-box;
     border-bottom: 1px solid rgba(0, 0, 0, .75);
     box-shadow: 0 0 5px rgb(0 0 0 / .75);
 }
@@ -290,7 +291,7 @@ header .menu-group .main-menu li a {
 /* ACTIVITY */
 .section--activity {
     padding-top: 50px;
-    background: #f6f4f1;
+    background: #d9dbde;
     color: #333;
     position: relative;
 }
@@ -309,7 +310,7 @@ header .menu-group .main-menu li a {
     /* margin 수정 */
     margin-top: 50px;
     margin-bottom: 50px;
-    border: 1px solid #f4f5e4;
+    border: 1px solid #e5e5e5;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, .1);
     transition: 0.4s;
 }

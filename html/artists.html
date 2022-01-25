@@ -8,9 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
-    <link rel="stylesheet" href="../css/artist_main.css">
     <link rel="stylesheet" href="../main.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="../css/artist_main.css">
 
     <style>
         @font-face {
@@ -23,10 +22,12 @@
             font-family: "GowunBatang-Regular";
         }
     </style>
+    <script src="../Btnmove.js" defer ></script>
+    <script src="../toggle.js" defer ></script>
 </head>
 
 <body>
-    <div class="body__container">
+    <div class="body__container artists--container">
 
         <!-- HEADER -->
         <header id="header" class="section">
@@ -69,6 +70,8 @@
                 </div>
             </div>
         </header>
+
+        <!-- ARTISTS LIST -->
         <section class="section artists--section--artist">
             <div class="inner">
                 <h2 class="artist__title">
@@ -77,33 +80,94 @@
                 <div class="artists-container">
                     <div class="artists">
                         <div class="artist1"></div>
-                        <p class="artist--name"> 최 영 광 </p>
+                        <p class="artist--name">
+                            최 영 광
+                            <button id="open"> <img src="../img/more-info.png" alt="view-details-for-profile"> </button>
+                        </p>
                     </div>
                     <div class="artists">
                         <div class="artist2"></div>
-                        <p class="artist--name"> 윤 수 영</p>
+                        <p class="artist--name"> 윤 수 영 <button id="open"> <img src="../img/more-info.png" alt="view-details-for-profile"> </button> </p>
                     </div>
                     <div class="artists">
                         <div class="artist3"></div>
-                        <p class="artist--name"> 홍 윤 화 </p>
+                        <p class="artist--name"> 홍 윤 화 <button id="open"> <img src="../img/more-info.png" alt="view-details-for-profile"> </button> </p>
                     </div>
                     <div class="artists">
                         <div class="artist4"></div>
-                        <p class="artist--name"> 신 락 훈 </p>
+                        <p class="artist--name"> 신 락 훈 <button id="open"> <img src="../img/more-info.png" alt="view-details-for-profile"> </button> </p>
                     </div>
                     <div class="artists">
                         <div class="artist5"></div>
-                        <p class="artist--name"> 정 재 헌 </p>
+                        <p class="artist--name"> 정 재 헌 <button id="open"> <img src="../img/more-info.png" alt="view-details-for-profile"> </button> </p>
                     </div>
                     <div class="artists">
                         <div class="artist6"></div>
-                        <p class="artist--name"> 김 만 중 </p>
+                        <p class="artist--name"> 김 만 중 <button id="open"> <img src="../img/more-info.png" alt="view-details-for-profile"> </button> </p>
                     </div>
                     
                 </div>
             </div>
         </section>
 
+        <!-- ARTISTS' ARTICLE -->
+        <!-- 기본적으로 다 숨겨놓은 다음 아티스트1~6 클릭 시 해당 아티스트만 보이게  -->
+        <section id="profile1" class="section-profile-card" style="display: none;">
+           
+            <div class="inner">
+                <div class="profile-left">
+                    <div class="profile--img--wrapper">
+                        <ul class="img-slide">
+                            <li class="img-tile">
+                                <img src="../img/artisits/younggwang_main.jpg" alt="main">
+                            </li>
+                            <li class="img-tile">
+                                <img src="../img/artisits/younggwang_sub1.jpg" alt="sub1">
+                            </li>
+                            <li class="img-tile">
+                                <img src="../img/artisits/younggwang_sub2.jpg" alt="sub2">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <button id="btn1" class="move-btn-to-side"></button>
+                        <button id="btn2" class="move-btn-to-side"></button>
+                        <button id="btn3" class="move-btn-to-side"></button>
+                    </div>
+                </div>
+                <!-- 이름 / 생년월일 / 개인블로그 or 인스타그램 주소 -->
+                <div class="profile-right">
+                    <div class="profile--details--personal">
+                        <ul class="left-list">
+                            <li> 이 름 </li>
+                            <li> 나 이 </li>
+                            <li> 인★그램</li>
+                            <li> 사는 곳 </li>
+                            <li> 활 동 </li>
+                        </ul>
+                        <ul class="right-list">
+                            <li> 최영광 (배우, 대표) </li>
+                            <li> 만 26세 </li>
+                            <li> <a href="https://instagram.com/c.glory_?utm_medium=copy_link"> @c.glory</a></li>
+                            <li> 경기도 오산시 </li>
+                            <li> 21. 12 ~ 22. 01 그대 내 곁에 (김차사 역) </li>
+                        </ul>
+                    </div>
+                    <div class="profile--details--values">
+                        안녕하세요 대배우 최영광입니다.<br/>
+                        저는 축구선수가 꿈입니다.
+                    </div>
+                </div>
+                <button id="close">close</button>
+            </div>
+        </section>
+        
+        <section class="section-profile-card2"></section>
+        <section class="section-profile-card3"></section>
+        <section class="section-profile-card4"></section>
+        <section class="section-profile-card5"></section>
+        <section class="section-profile-card6"></section>
+        
         
         <!-- FOOTER -->
         <footer class="section">
