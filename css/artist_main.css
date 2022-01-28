@@ -1,7 +1,4 @@
 /* ARTISTS  LIST*/
-.artists--section--artist {
-
-}
 .artists--section--artist .inner {
     /* border: 1px solid; */
     max-width: 1300px
@@ -71,11 +68,6 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-}
-.artists--section--artist .artists-container .artists .position {
-    font-size: 20px;
-    text-align: center;
-    margin-top: 10px;
 }
 .artists--section--artist .artists-container .artists .artist--name {
     font-size: 30px;
@@ -179,7 +171,6 @@
 .profile-right .profile--details--values {
     text-align: center;
     font-size: 24px;
-    text-align: center;
     margin-top: 100px;
     font-weight: bold;
     line-height: 2em;

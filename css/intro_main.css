@@ -1,5 +1,4 @@
 /* COMMON */
-
 .body__container>section:not(:first-child) {
     background: #000;
 }

@@ -1,0 +1,50 @@
+/* ARTISTS  LIST*/
+.artists--section--artist .inner {
+    max-width: none;
+}
+.artists--section--artist .artist__title {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px 0 20px 0;
+}
+.artists--section--artist .artists-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3,200px);
+    gap: 50px 0;
+    margin-bottom: 100px;
+}
+.artists--section--artist .artists-container .artists {
+    box-shadow: 2px 3px 5px 0px;
+    margin: 10px;
+}
+
+
+.artists--section--artist .artists-container .artists .artist--name {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.artists--section--artist .artists-container .artists .artist--name img {
+    width: 100%;
+    height: 100%;
+    margin-left: 10px;
+}
+#open {
+    background: #fff;
+    border: none;
+    cursor: none;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#open:hover {
+    background: none;
+    border-radius: 0;
+}

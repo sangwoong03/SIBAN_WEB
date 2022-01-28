@@ -1,22 +1,48 @@
-const open = document.getElementById("open");
-const close = document.getElementById("close");
-const modal = document.getElementById("profile1");
-// const modalList = document.querySelectorAll(".section-profile-card");
-// const index = modalList.indexOf(card)
+const openBtn = document.querySelectorAll(".open-btn");
+const closeBtn = document.querySelectorAll(".close-btn");
+const profile = document.querySelectorAll(".section-profile-card");
 
+// OPEN
+openBtn.item(0).onclick = () => {
+    profile.item(0).style.display = 'flex';
+}
+openBtn.item(1).onclick = () => {
+    profile.item(1).style.display = 'flex';
+}
+openBtn.item(2).onclick = () => {
+    profile.item(2).style.display = 'flex';
+}
+openBtn.item(3).onclick = () => {
+    profile.item(3).style.display = 'flex';
+}
+openBtn.item(4).onclick = () => {
+    profile.item(4).style.display = 'flex';
+}
+openBtn.item(5).onclick = () => {
+    profile.item(5).style.display = 'flex';
+}
 
-open.onclick = () => {
-    modal.style.display = 'flex';
-};
+// CLOSE
+closeBtn.item(0).onclick = () => {
+    profile.item(0).style.display = 'none';
+}
+closeBtn.item(1).onclick = () => {
+    profile.item(1).style.display = 'none';
+}
+closeBtn.item(2).onclick = () => {
+    profile.item(2).style.display = 'none';
+}
+closeBtn.item(3).onclick = () => {
+    profile.item(3).style.display = 'none';
+}
+closeBtn.item(4).onclick = () => {
+    profile.item(4).style.display = 'none';
+}
+closeBtn.item(5).onclick = () => {
+    profile.item(5).style.display = 'none';
+}
 
-close.onclick = () => {
-    modal.style.display = 'none';
-};
-
-
-
-
-
-// profile1~7까지 1부터 7값만 비교
-// profile은 동일하니 뒤에 숫자만 비교했을 때 ... 음
-
+// 2022-01-26
+// document.querySelector.All을 통해 참조한 class들은 배열 값으로 상수 변환
+// 상수.item(n)은 배열 값을 가진 집합 상수에서 n번째 항목 선택
+// 반복문으로 어떻게 바꾸지???

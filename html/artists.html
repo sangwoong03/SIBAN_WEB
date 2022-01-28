@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
     <link rel="stylesheet" href="../main.css">
     <link rel="stylesheet" href="../css/artist_main.css">
+    <link rel="stylesheet" media="(max-width: 768px)" href="../css/small.css">
+    <link rel="stylesheet" media="(max-width: 768px)" href="../css/artist_small.css">
 
     <style>
         @font-face {
@@ -82,28 +84,30 @@
                         <div class="artist1"></div>
                         <p class="artist--name">
                             최 영 광
-                            <button id="open"> <img src="../img/more-info.png" alt="view-details-for-profile"> </button>
+                            <button class="open-btn" id="open"> <img src="../img/more-info.png" alt="view-details-for-profile"> </button>
                         </p>
                     </div>
                     <div class="artists">
                         <div class="artist2"></div>
-                        <p class="artist--name"> 윤 수 영 <button id="open"> <img src="../img/more-info.png" alt="view-details-for-profile"> </button> </p>
+                        <p class="artist--name">
+                            윤 수 영
+                            <button class="open-btn" id="open"> <img src="../img/more-info.png" alt="view-details-for-profile"> </button> </p>
                     </div>
                     <div class="artists">
                         <div class="artist3"></div>
-                        <p class="artist--name"> 홍 윤 화 <button id="open"> <img src="../img/more-info.png" alt="view-details-for-profile"> </button> </p>
+                        <p class="artist--name"> 홍 윤 화 <button class="open-btn" id="open"> <img src="../img/more-info.png" alt="view-details-for-profile"> </button> </p>
                     </div>
                     <div class="artists">
                         <div class="artist4"></div>
-                        <p class="artist--name"> 신 락 훈 <button id="open"> <img src="../img/more-info.png" alt="view-details-for-profile"> </button> </p>
+                        <p class="artist--name"> 신 락 훈 <button class="open-btn" id="open"> <img src="../img/more-info.png" alt="view-details-for-profile"> </button> </p>
                     </div>
                     <div class="artists">
                         <div class="artist5"></div>
-                        <p class="artist--name"> 정 재 헌 <button id="open"> <img src="../img/more-info.png" alt="view-details-for-profile"> </button> </p>
+                        <p class="artist--name"> 정 재 헌 <button class="open-btn" id="open"> <img src="../img/more-info.png" alt="view-details-for-profile"> </button> </p>
                     </div>
                     <div class="artists">
                         <div class="artist6"></div>
-                        <p class="artist--name"> 김 만 중 <button id="open"> <img src="../img/more-info.png" alt="view-details-for-profile"> </button> </p>
+                        <p class="artist--name"> 김 만 중 <button class="open-btn" id="open"> <img src="../img/more-info.png" alt="view-details-for-profile"> </button> </p>
                     </div>
                     
                 </div>
@@ -112,8 +116,8 @@
 
         <!-- ARTISTS' ARTICLE -->
         <!-- 기본적으로 다 숨겨놓은 다음 아티스트1~6 클릭 시 해당 아티스트만 보이게  -->
-        <section id="profile1" class="section-profile-card" style="display: none;">
-           
+        <!-- 최영광 -->
+        <section class="section-profile-card" style="display: none;">
             <div class="inner">
                 <div class="profile-left">
                     <div class="profile--img--wrapper">
@@ -158,15 +162,246 @@
                         저는 축구선수가 꿈입니다.
                     </div>
                 </div>
-                <button id="close">close</button>
+                <button class="close-btn" id="close">close</button>
             </div>
         </section>
-        
-        <section class="section-profile-card2"></section>
-        <section class="section-profile-card3"></section>
-        <section class="section-profile-card4"></section>
-        <section class="section-profile-card5"></section>
-        <section class="section-profile-card6"></section>
+        <!-- 윤수영 -->
+        <section class="section-profile-card" style="display: none;">
+            <div class="inner">
+                <div class="profile-left">
+                    <div class="profile--img--wrapper">
+                        <ul class="img-slide">
+                            <li class="img-tile">
+                                <img src="../img/artisits/suyoung_main.jpg" alt="main">
+                            </li>
+                            <li class="img-tile">
+                                <img src="../img/artisits/suyoung_sub1.jpg" alt="sub1">
+                            </li>
+                            <li class="img-tile">
+                                <img src="../img/artisits/suyoung_sub2.jpg" alt="sub2">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <button id="btn1" class="move-btn-to-side"></button>
+                        <button id="btn2" class="move-btn-to-side"></button>
+                        <button id="btn3" class="move-btn-to-side"></button>
+                    </div>
+                </div>
+                <!-- 이름 / 생년월일 / 개인블로그 or 인스타그램 주소 -->
+                <div class="profile-right">
+                    <div class="profile--details--personal">
+                        <ul class="left-list">
+                            <li> 이 름 </li>
+                            <li> 나 이 </li>
+                            <li> 개인공간 </li>
+                            <li> 사는 곳 </li>
+                            <li> 활 동 </li>
+                        </ul>
+                        <ul class="right-list">
+                            <li> 윤수영 (객원 배우) </li>
+                            <li> 만 25세 </li>
+                            <li> <a href="https://instagram.com/swimeee_?utm_medium=copy_link"> @swimee </a></li>
+                            <li> 어차피 지울 거임 </li>
+                            <li> 21. 12 ~ 22. 01 그대 내 곁에 (여주1 역) </li>
+                        </ul>
+                    </div>
+                    <div class="profile--details--values">
+                        안녕하세요 배우 윤수영입니다.
+                    </div>
+                </div>
+                <button class="close-btn" id="close">close</button>
+            </div>
+        </section>
+        <!-- 홍윤화 -->
+        <section class="section-profile-card" style="display:none;">
+            <div class="inner">
+                <div class="profile-left">
+                    <div class="profile--img--wrapper">
+                        <ul class="img-slide">
+                            <li class="img-tile">
+                                <img src="../img/artisits/yunhwa_main.jpg" alt="main">
+                            </li>
+                            <!-- 사진 추가 필요 -->
+                            <!-- <li class="img-tile">
+                                <img src="../img/artisits/suyoung_sub1.jpg" alt="sub1">
+                            </li>
+                            <li class="img-tile">
+                                <img src="../img/artisits/suyoung_sub2.jpg" alt="sub2">
+                            </li> -->
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <button id="btn1" class="move-btn-to-side"></button>
+                        <!-- <button id="btn2" class="move-btn-to-side"></button>
+                        <button id="btn3" class="move-btn-to-side"></button> -->
+                    </div>
+                </div>
+                <!-- 이름 / 생년월일 / 개인블로그 or 인스타그램 주소 -->
+                <div class="profile-right">
+                    <div class="profile--details--personal">
+                        <ul class="left-list">
+                            <li> 이 름 </li>
+                            <li> 나 이 </li>
+                            <li> 개인공간 </li>
+                            <li> 사는 곳 </li>
+                            <li> 활 동 </li>
+                        </ul>
+                        <ul class="right-list">
+                            <li> 홍윤화 (배우) </li>
+                            <li> 만 26세 </li>
+                            <li> <a href="https://instagram.com/yoonhwa_h_?utm_medium=copy_link"> @yoonhwa_h </a></li>
+                            <li> 어차피 지울 거임 </li>
+                            <li> 21. 12 ~ 22. 01 그대 내 곁에 (김 역) </li>
+                        </ul>
+                    </div>
+                    <div class="profile--details--values">
+                        안녕하세요 배우 홍윤화입니다.
+                    </div>
+                </div>
+                <button class="close-btn" id="close">close</button>
+        </section>
+        <!-- 신락훈 -->
+        <section class="section-profile-card" style="display:none;">
+            <div class="inner">
+                <div class="profile-left">
+                    <div class="profile--img--wrapper">
+                        <ul class="img-slide">
+                            <li class="img-tile">
+                                <img src="../img/artisits/rakoon_main.jpg" alt="main">
+                            </li>
+                            <li class="img-tile">
+                                <img src="../img/artisits/rakoon_sub1.jpg" alt="sub1">
+                            </li>
+                            <!-- <li class="img-tile">
+                                <img src="../img/artisits/suyoung_sub2.jpg" alt="sub2">
+                            </li> -->
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <button id="btn1" class="move-btn-to-side"></button>
+                        <button id="btn2" class="move-btn-to-side"></button>
+                        <!-- <button id="btn3" class="move-btn-to-side"></button> -->
+                    </div>
+                </div>
+                <!-- 이름 / 생년월일 / 개인블로그 or 인스타그램 주소 -->
+                <div class="profile-right">
+                    <div class="profile--details--personal">
+                        <ul class="left-list">
+                            <li> 이 름 </li>
+                            <li> 나 이 </li>
+                            <li> 개인공간 </li>
+                            <li> 사는 곳 </li>
+                            <li> 활 동 </li>
+                        </ul>
+                        <ul class="right-list">
+                            <li> 신락훈 (배우) </li>
+                            <li> 만 30세 </li>
+                            <li> <a href="https://instagram.com/raccoonee_?utm_medium=copy_link"> @raccoonee_ </a></li>
+                            <li> 어차피 지울 거임 </li>
+                            <li> 지워야되지만 채워넣기용 </li>
+                        </ul>
+                    </div>
+                    <div class="profile--details--values">
+                        이런 저런 그런 신락훈입니다.
+                    </div>
+                </div>
+                <button class="close-btn" id="close">close</button>
+        </section>
+        <!-- 정재헌 -->
+        <section class="section-profile-card" style="display:none;">
+            <div class="inner">
+                <div class="profile-left">
+                    <div class="profile--img--wrapper">
+                        <ul class="img-slide">
+                            <li class="img-tile">
+                                <img src="../img/artisits/jaehun_main.jpg" alt="main">
+                            </li>
+                            <li class="img-tile">
+                                <img src="../img/artisits/jaehun_sub1.jpg" alt="sub1">
+                            </li>
+                            <li class="img-tile">
+                                <img src="../img/artisits/jaehun_sub2.jpg" alt="sub2">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <button id="btn1" class="move-btn-to-side"></button>
+                        <button id="btn2" class="move-btn-to-side"></button>
+                        <button id="btn3" class="move-btn-to-side"></button>
+                    </div>
+                </div>
+                <!-- 이름 / 생년월일 / 개인블로그 or 인스타그램 주소 -->
+                <div class="profile-right">
+                    <div class="profile--details--personal">
+                        <ul class="left-list">
+                            <li> 이 름 </li>
+                            <li> 나 이 </li>
+                            <li> 개인공간 </li>
+                            <li> 사는 곳 </li>
+                            <li> 활 동 </li>
+                        </ul>
+                        <ul class="right-list">
+                            <li> 정재헌 (배우) </li>
+                            <li> 만 28세 </li>
+                            <li> <a href="https://instagram.com/raccoonee_?utm_medium=copy_link"> @raccoonee_ </a></li>
+                            <li> 어차피 지울 거임 </li>
+                            <li> 지워야되지만 채워넣기용 </li>
+                        </ul>
+                    </div>
+                    <div class="profile--details--values">
+                        안녕하세요 배우 정재헌입니다.
+                    </div>
+                </div>
+                <button class="close-btn" id="close">close</button>
+        </section>
+        <!-- 김만중 -->
+        <section class="section-profile-card" style="display:none;">
+            <div class="inner">
+                <div class="profile-left">
+                    <div class="profile--img--wrapper">
+                        <ul class="img-slide">
+                            <li class="img-tile">
+                                <img src="../img/artisits/manjoong_main.jpg" alt="main">
+                            </li>
+                            <li class="img-tile">
+                                <img src="../img/artisits/manjoong_sub1.jpg" alt="sub1">
+                            </li>
+                            <!-- <li class="img-tile">
+                                <img src="../img/artisits/suyoung_sub2.jpg" alt="sub2">
+                            </li> -->
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <button id="btn1" class="move-btn-to-side"></button>
+                        <button id="btn2" class="move-btn-to-side"></button>
+                        <!-- <button id="btn3" class="move-btn-to-side"></button> -->
+                    </div>
+                </div>
+                <!-- 이름 / 생년월일 / 개인블로그 or 인스타그램 주소 -->
+                <div class="profile-right">
+                    <div class="profile--details--personal">
+                        <ul class="left-list">
+                            <li> 이 름 </li>
+                            <li> 나 이 </li>
+                            <li> 개인공간 </li>
+                            <li> 사는 곳 </li>
+                            <li> 활 동 </li>
+                        </ul>
+                        <ul class="right-list">
+                            <li> 김만중 (배우) </li>
+                            <li> 만 30세 </li>
+                            <li> <a href="https://instagram.com/raccoonee_?utm_medium=copy_link"> @raccoonee_ </a></li>
+                            <li> 어차피 지울 거임 </li>
+                            <li> 지워야되지만 채워넣기용 </li>
+                        </ul>
+                    </div>
+                    <div class="profile--details--values">
+                        안녕하세요 배우 김만중입니다.
+                    </div>
+                </div>
+                <button class="close-btn" id="close">close</button>
+        </section>
         
         
         <!-- FOOTER -->
@@ -207,9 +442,6 @@
             </div>
             <!-- <p class="small--p"> Copyright SIBAN All&nbsp;rights reserved. </p> -->
         </footer>
-        <a href="#header" class="move_to_top"> 
-            <img src="../img/arrow_up.png" alt="move_to_top">
-        </a>
         
     </div>
 
